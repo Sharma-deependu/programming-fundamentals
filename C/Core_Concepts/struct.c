@@ -1,0 +1,34 @@
+#include<stdio.h>  
+#include <string.h>    
+struct student
+{    
+int rollno;    
+char name[25];    
+};  
+  
+int main(){    
+
+int i,size;    
+printf("Define the size of array:");    
+scanf("%d",&size);
+
+struct student st[size];    
+
+printf("Enter Records of %d students",size);    
+
+for(i=0;i<size;i++)
+{
+    
+printf("\nEnter Rollno:");    
+scanf("%d",&st[i].rollno);    
+printf("\nEnter Name:");    
+scanf("%s",&st[i].name);    
+}    
+
+printf("\nStudent Information List:");    
+for(i=0;i<size;i++)
+{    
+printf("\nRollno:%d, Name:%s",st[i].rollno,st[i].name);    
+}    
+   return 0;    
+}   
