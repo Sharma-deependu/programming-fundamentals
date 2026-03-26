@@ -49,7 +49,7 @@ int main() {
     // Define menu items
     vector<MenuItem> menu = {
         {"Pizza", "Delicious pizza topped with your favorite toppings", 10.99},
-        {"Burger", "Juicy beef patty with cheese and veggies", 8.99},
+        {"Burger", "Aloo patty along with cheese ", 8.99},
         {"Salad", "Fresh salad with mixed greens and dressing", 6.99}
     };
 
