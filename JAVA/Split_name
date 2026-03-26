@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class project2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your full name: ");
+        String fullName = scanner.nextLine();
+
+        String[] words = fullName.split(" ");
+        int i;
+        String upper="";
+
+        for (i=0;i<words.length-1;i++) {
+            char ch=words[i].charAt(0);
+        
+            upper=upper+ch+".";
+            
+        }
+        upper=upper.toUpperCase();
+        System.out.println(upper+""+words[i]);
+    }
+}
+
